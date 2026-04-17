@@ -34,7 +34,7 @@ public class RewardsActivity extends AppCompatActivity {
                 0xFF00E5FF));
 
         rewardList.add(new RewardItem(
-                R.drawable.ic_star,
+                R.drawable.ic_coin,
                 "Daily Streak",
                 1000,
                 100,
