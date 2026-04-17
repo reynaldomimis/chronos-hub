@@ -18,7 +18,7 @@ public class StartActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityStartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Utils.addSystemWindowInsetToPadding(binding.btnCreateAccount, true, false, true, true);
+        Utils.addSystemWindowInsetToMargin(binding.btnCreateAccount, true, false, true, true);
         binding.btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
