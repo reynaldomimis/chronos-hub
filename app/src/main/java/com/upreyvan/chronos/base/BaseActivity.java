@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.upreyvan.chronos.R;
 
 import java.lang.ref.WeakReference;
 
@@ -29,5 +32,11 @@ public class BaseActivity extends AppCompatActivity {
     protected void onDestroy() {
         ctx.clear();
         super.onDestroy();
+    }
+
+    public void replaceFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
     }
 }
