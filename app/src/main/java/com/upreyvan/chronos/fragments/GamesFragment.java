@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.upreyvan.chronos.base.BaseFragment;
 import com.upreyvan.chronos.databinding.FragmentGamesBinding;
+import com.upreyvan.chronos.util.Utils;
 
 public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
 
@@ -20,6 +21,6 @@ public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
 
     @Override
     protected void onViewBindingCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-
+        Utils.addSystemWindowInsetToPadding(binding.headerSection.getRoot(), true, true, true, false);
     }
 }
