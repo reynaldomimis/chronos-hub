@@ -17,7 +17,7 @@
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:dividerColor="@color/accent"
+        app:dividerColor="@color/color_accent"
         android:alpha="0.5"
         app:dividerThickness="0.5dp"/>
 
