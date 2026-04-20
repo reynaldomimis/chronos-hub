@@ -93,15 +93,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="80dp"
                             android:text="@string/earn_xxx_coins_per_invite"
-                            android:textColor="@color/text_primary"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textAppearance="?textAppearanceBodyLargeEmphasized"/>
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            app:cardBackgroundColor="@color/color_primary"
+                            app:cardBackgroundColor="?colorOnSecondary"
                             app:cardCornerRadius="12dp"
                             app:cardElevation="1dp"
                             app:strokeWidth="0dp">
@@ -117,16 +115,15 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/default_referral_id"
-                                    android:textColor="@color/text_primary"
-                                    android:textSize="14sp" />
+                                    android:textAppearance="?textAppearanceLabelLargeEmphasized"/>
 
                                 <ImageView
                                     android:layout_width="18dp"
                                     android:layout_height="18dp"
                                     android:layout_marginStart="8dp"
                                     android:alpha="0.4"
-                                    android:background="@drawable/item_shape_alone"
-                                    android:src="@drawable/ic_copy" />
+                                    android:src="@drawable/ic_copy"
+                                    app:tint="?colorTertiary" />
                             </LinearLayout>
                         </com.google.android.material.card.MaterialCardView>
 
@@ -150,8 +147,7 @@
                         android:layout_gravity="bottom|end"
                         android:layout_marginEnd="4dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/mystery_box"
-                        android:translationZ="10dp" />
+                        android:src="@drawable/mystery_box" />
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
