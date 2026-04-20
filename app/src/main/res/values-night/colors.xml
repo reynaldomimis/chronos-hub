@@ -1,0 +1,17 @@
+<resources>
+    <color name="bg_mint">#0E1512</color>
+    <color name="color_top">#16201B</color>
+    <color name="color_bottom">#101714</color>
+    <color name="color_primary">#16201B</color>
+    <color name="color_secondary">#33C06B</color>
+    <color name="color_accent">#4DDA9A</color>
+    <color name="bg_card">#1D2A24</color>
+    <color name="stroke">#2C3E35</color>
+    <color name="text_primary">#E8FFF1</color>
+    <color name="text_hint">#9FB3A8</color>
+    <color name="success">#38D39F</color>
+    <color name="error">#FF7A86</color>
+    <color name="warning">#F2C14E</color>
+    <color name="divider">#3A4C43</color>
+    <color name="ripple">#3350E3A4</color>
+</resources>
