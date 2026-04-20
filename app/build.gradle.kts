@@ -46,8 +46,9 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.cardview)
     implementation(libs.recyclerview)
-
+    implementation(libs.lottie)
     implementation("com.ashokvarma.android:bottom-navigation-bar:2.2.0")
+    implementation(libs.gridlayout)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
         <shape android:shape="rectangle">
-            <solid android:color="@color/bg_card" />
+            <solid android:color="@color/color_secondary" />
             <corners android:radius="4dp"/>
         </shape>
     </item>
@@ -10,8 +10,8 @@
         <clip>
             <shape android:shape="rectangle">
                 <gradient
-                    android:startColor="#00E5FF"
-                    android:endColor="#4A6CFF"
+                    android:startColor="@color/color_top"
+                    android:endColor="@color/color_bottom"
                     android:angle="0"/>
                 <corners android:radius="4dp"/>
             </shape>

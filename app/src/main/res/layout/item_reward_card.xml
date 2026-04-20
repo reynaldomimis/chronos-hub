@@ -25,7 +25,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:padding="12dp"
-                app:shapeAppearanceOverlay="@style/RoundedSquare" />
+                app:shapeAppearanceOverlay="@style/RoundedPayingGames" />
 
             <!-- Title -->
             <TextView
@@ -72,7 +72,7 @@
             android:layout_height="8dp"
             android:layout_marginTop="16dp"
             android:max="100"
-            android:progressDrawable="@drawable/progress_blue_gradient" />
+            android:progressDrawable="@drawable/progress_green_gradient" />
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
