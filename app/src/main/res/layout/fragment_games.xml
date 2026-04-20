@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/bg_mint"
     android:fillViewport="true">
 
@@ -151,44 +151,15 @@
         <TextView style="@style/SectionLabel"
             android:text="@string/choose_rewards_activities"/>
 
-        <androidx.gridlayout.widget.GridLayout
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:columnCount="2">
-
-            <include
-                android:id="@+id/dailyTask"
-                layout="@layout/item_daily_task_card"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:layout_columnWeight="1" />
-
-            <include
-                android:id="@+id/topPlayer"
-                layout="@layout/item_daily_task_card"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:layout_columnWeight="1" />
-
-            <include
-                android:id="@+id/playGames"
-                layout="@layout/item_daily_task_card"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:layout_columnWeight="1" />
-
-            <include
-                android:id="@+id/watchAds"
-                layout="@layout/item_daily_task_card"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:layout_columnWeight="1" />
-        </androidx.gridlayout.widget.GridLayout>
+            app:spanCount="2"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_daily_task_card"
+            tools:itemCount="4">
+        </androidx.recyclerview.widget.RecyclerView>
 
         <!-- Newbie Task -->
         <TextView style="@style/SectionLabel"
