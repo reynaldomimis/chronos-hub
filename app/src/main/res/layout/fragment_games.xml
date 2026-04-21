@@ -32,10 +32,11 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="2dp"
-                app:layout_constraintDimensionRatio="16:4"
+                app:layout_constraintDimensionRatio="8:4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/stroke"
                 app:strokeWidth="0dp">
 
                 <ImageView
@@ -142,12 +143,12 @@
 
                     <ImageView
                         android:id="@+id/mysteryBox"
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
-                        android:layout_gravity="bottom|end"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp"
+                        android:layout_gravity="top|end"
                         android:layout_marginEnd="4dp"
-                        android:layout_marginBottom="8dp"
-                        android:src="@drawable/mystery_box" />
+                        android:scaleType="fitXY"
+                        android:src="@drawable/invite" />
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -158,6 +159,7 @@
             android:text="@string/choose_rewards_activities" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -214,12 +216,14 @@
                     app:layout_constraintTop_toBottomOf="@id/tvTopSurvey" />
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
                     android:rotation="15"
-                    android:src="@drawable/task"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/survey"
                     app:layout_constraintBottom_toBottomOf="@id/tvDescription"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvDescription"
                     app:layout_constraintTop_toTopOf="@id/tvTopSurvey" />
 
                 <com.google.android.material.button.MaterialButton
@@ -233,7 +237,7 @@
                     android:paddingVertical="10dp"
                     android:text="@string/start_now"
                     android:textAllCaps="false"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:backgroundTint="?colorSecondary"
@@ -249,6 +253,7 @@
             android:text="@string/top_3_high_paying_games" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gameRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

@@ -25,6 +25,6 @@
     <string name="beginner_friendly_high_reward_process">Beginner friendly high reward process.</string>
     <string name="start_now">Start Now</string>
     <string name="top_3_high_paying_games">Top 3 High Paying Games</string>
-    <string name="default_top_3_card_title">Neon Skies: Warzone</string>
-    <string name="default_top_3_card_description">2000 coins</string>
+    <string name="default_top_3_card_title">Chronos Hub: Rewarding</string>
+    <string name="default_top_3_card_coins">0 coin</string>
 </resources>

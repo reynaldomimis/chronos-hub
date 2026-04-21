@@ -13,10 +13,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.upreyvan.chronos.R;
 
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 public class Utils {
-
 
     public static int dpToPx(Context context, float dp) {
         return Math.round(
@@ -98,5 +99,10 @@ public class Utils {
         } else {
             return R.drawable.item_shape_middle;
         }
+    }
+
+    public static String getFormattedCoins(int coins) {
+        NumberFormat formatter = NumberFormat.getInstance(Locale.US);
+        return formatter.format(coins);
     }
 }

@@ -10,9 +10,8 @@
     app:cardBackgroundColor="@color/color_primary"
     app:cardCornerRadius="24dp"
     app:cardElevation="0dp"
-    android:layout_marginHorizontal="4dp"
     app:strokeColor="@color/stroke"
-    app:strokeWidth="1.5dp">
+    app:strokeWidth="1dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,7 +19,7 @@
         android:padding="12dp">
 
         <ImageView
-            android:id="@+id/ivMainIcon"
+            android:id="@+id/icon"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/task"
@@ -28,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -38,10 +37,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivMainIcon" />
+            app:layout_constraintTop_toBottomOf="@+id/icon" />
 
         <TextView
-            android:id="@+id/tvDescription"
+            android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -50,7 +49,7 @@
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <LinearLayout
             android:id="@+id/llCoinSection"
@@ -60,21 +59,22 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDescription">
+            app:layout_constraintTop_toBottomOf="@+id/description">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_coin" />
 
             <TextView
-                android:id="@+id/tvCoinsValue"
+                android:id="@+id/coins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="@string/default_coins"
                 android:textColor="@color/text_primary"
-                android:textSize="12sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -90,7 +90,6 @@
             android:paddingVertical="10dp"
             android:text="@string/proceed"
             android:textSize="12sp"
-            android:textStyle="bold"
             app:backgroundTint="?colorSecondary"
             app:cornerRadius="18dp"
             app:elevation="0dp"
