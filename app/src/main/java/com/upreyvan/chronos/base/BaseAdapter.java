@@ -12,8 +12,10 @@ import androidx.viewbinding.ViewBinding;
 public abstract class BaseAdapter<T, VB extends ViewBinding> extends ListAdapter<T, BaseAdapter.BaseViewHolder<VB>> {
 
     private OnItemClickListener<T> listener;
+    protected OnItemClickListener<T> getOnItemClickListener() {
+        return listener;
+    }
 
-    // Kailangan natin ng DiffUtil parameter dito
     protected BaseAdapter(@NonNull DiffUtil.ItemCallback<T> diffCallback) {
         super(diffCallback);
     }
@@ -30,11 +32,11 @@ public abstract class BaseAdapter<T, VB extends ViewBinding> extends ListAdapter
 
     @Override
     public void onBindViewHolder(@NonNull BaseViewHolder<VB> holder, int position) {
-        T item = getItem(position); // Method ito ni ListAdapter
+        T item = getItem(position);
         bind(holder.binding, item, position);
 
         holder.itemView.setOnClickListener(v -> {
-            int currentPos = holder.getBindingAdapterPosition(); // Mas safe ito sa clicks
+            int currentPos = holder.getBindingAdapterPosition();
             if (listener != null && currentPos != RecyclerView.NO_POSITION) {
                 listener.onClick(getItem(currentPos), currentPos);
             }

@@ -11,9 +11,9 @@ import com.upreyvan.chronos.databinding.ItemGameCardBinding;
 import com.upreyvan.chronos.model.TopGamesModel;
 import com.upreyvan.chronos.util.Utils;
 
-public class GameAdapter extends BaseAdapter<TopGamesModel, ItemGameCardBinding> {
+public class TopGameAdapter extends BaseAdapter<TopGamesModel, ItemGameCardBinding> {
 
-    public GameAdapter() {
+    public TopGameAdapter() {
         super(new DiffUtil.ItemCallback<TopGamesModel>() {
             @Override
             public boolean areItemsTheSame(@NonNull TopGamesModel oldItem, @NonNull TopGamesModel newItem) {

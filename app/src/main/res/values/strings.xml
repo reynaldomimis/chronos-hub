@@ -27,4 +27,14 @@
     <string name="top_3_high_paying_games">Top 3 High Paying Games</string>
     <string name="default_top_3_card_title">Chronos Hub: Rewarding</string>
     <string name="default_top_3_card_coins">0 coin</string>
+    <string name="header_title">Activity</string>
+    <string name="default_value_rank_leaderboard">0</string>
+    <string name="keep_playing_to_rank_up">Keep playing to rank up!</string>
+    <string name="default_points_leaderboard">0 pt</string>
+    <string name="top_10">Top 10</string>
+    <string name="champion">Champion</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="user1">User1</string>
+    <string name="user2">User2</string>
+    <string name="user3">User3</string>
 </resources>

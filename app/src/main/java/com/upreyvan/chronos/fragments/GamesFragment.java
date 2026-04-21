@@ -1,5 +1,6 @@
 package com.upreyvan.chronos.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,10 +8,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.upreyvan.chronos.R;
-import com.upreyvan.chronos.adapters.GameAdapter;
+import com.upreyvan.chronos.activities.LeaderboardActivity;
+import com.upreyvan.chronos.adapters.TopGameAdapter;
 import com.upreyvan.chronos.adapters.TaskAdapter;
+import com.upreyvan.chronos.base.BaseActivity;
 import com.upreyvan.chronos.base.BaseFragment;
 import com.upreyvan.chronos.databinding.FragmentGamesBinding;
 import com.upreyvan.chronos.model.ActivitiesModel;
@@ -24,7 +28,7 @@ import java.util.List;
 public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
 
     private TaskAdapter taskAdapter;
-    private GameAdapter gameAdapter;
+    private TopGameAdapter topGameAdapter;
 
     @Override
     protected FragmentGamesBinding onCreateViewBinding(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,7 +45,7 @@ public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
 
     private void setupAdapters() {
         taskAdapter = new TaskAdapter();
-        gameAdapter = new GameAdapter();
+        topGameAdapter = new TopGameAdapter();
 
 
         // Convert DP to PX
@@ -59,13 +63,29 @@ public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
         );
 
         binding.taskRecyclerView.setAdapter(taskAdapter);
-        binding.gameRecyclerView.setAdapter(gameAdapter);
+        binding.gameRecyclerView.setAdapter(topGameAdapter);
 
         binding.taskRecyclerView.setNestedScrollingEnabled(false);
         binding.gameRecyclerView.setNestedScrollingEnabled(false);
 
         taskAdapter.setOnItemClickListener((item, position) -> {
-            // Handle click logic (e.g., Open task details)
+            Fragment selectedFragment = null;
+
+            switch (position) {
+                case 0:
+                    break;
+
+                case 1:
+                    Intent intent = new Intent(requireContext(), LeaderboardActivity.class);
+                    startActivity(intent);
+                    break;
+
+                case 2:
+                    break;
+
+                case 3:
+                    break;
+            }
         });
     }
 
@@ -80,9 +100,9 @@ public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
 
         //Top 3 High Paying Games list
         List<TopGamesModel> games = new ArrayList<>();
-        games.add(new TopGamesModel(1, "Neon Skies: Warzone" ,3000, R.drawable.neon_sky));
-        games.add(new TopGamesModel(2, "GosPrazek", 2000, R.drawable.neon_sky));
-        games.add(new TopGamesModel(3, "Flappy Skies",  1000, R.drawable.neon_sky));
-        gameAdapter.submitList(games);
+        games.add(new TopGamesModel(1,  "Neon Skies: Warzone" ,3000, R.drawable.neon_sky));
+        games.add(new TopGamesModel(2,  "GosPrazek", 2000, R.drawable.neon_sky));
+        games.add(new TopGamesModel(3,  "Flappy Skies",  1000, R.drawable.neon_sky));
+        topGameAdapter.submitList(games);
     }
 }

@@ -38,5 +38,19 @@ public class TaskAdapter extends BaseAdapter<ActivitiesModel, ItemDailyTaskCardB
         binding.description.setText(item.getDescription());
         binding.coins.setText(Utils.getFormattedCoins(item.getCoins()));
         binding.icon.setImageResource(item.getImageIcon());
+
+        binding.btnProceed.setOnClickListener(v -> {
+            if (getOnItemClickListener() != null) {
+                getOnItemClickListener().onClick(item, position);
+            }
+        });
+
+    }
+
+    //Avoid card clicking
+    @Override
+    public void onBindViewHolder(@NonNull BaseViewHolder<ItemDailyTaskCardBinding> holder, int position) {
+        bind(holder.binding, getItem(position), position);
+        holder.itemView.setOnClickListener(null);
     }
 }
