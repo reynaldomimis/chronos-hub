@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:layout_gravity="bottom"
         android:layout_marginStart="40dp"
-        app:cardBackgroundColor="@color/color_top"
+        app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="16dp"
         app:cardElevation="0dp"
         app:strokeWidth="1dp"
@@ -24,6 +24,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingStart="60dp"
+            android:background="@drawable/bg_horizontal_gradient_card"
             android:paddingEnd="16dp">
 
             <LinearLayout
@@ -68,7 +69,7 @@
                 android:id="@+id/btn_play_container"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                app:cardBackgroundColor="@color/bg_card"
+                app:cardBackgroundColor="@color/color_top"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
                 app:strokeWidth="0dp">
