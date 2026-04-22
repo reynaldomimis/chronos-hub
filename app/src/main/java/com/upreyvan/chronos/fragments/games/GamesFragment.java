@@ -1,4 +1,4 @@
-package com.upreyvan.chronos.fragments;
+package com.upreyvan.chronos.fragments.games;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,6 @@ import com.upreyvan.chronos.R;
 import com.upreyvan.chronos.activities.LeaderboardActivity;
 import com.upreyvan.chronos.adapters.TopGameAdapter;
 import com.upreyvan.chronos.adapters.TaskAdapter;
-import com.upreyvan.chronos.base.BaseActivity;
 import com.upreyvan.chronos.base.BaseFragment;
 import com.upreyvan.chronos.databinding.FragmentGamesBinding;
 import com.upreyvan.chronos.model.ActivitiesModel;
