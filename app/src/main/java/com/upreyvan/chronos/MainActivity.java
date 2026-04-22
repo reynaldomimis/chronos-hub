@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.upreyvan.chronos.base.BaseActivity;
 import com.upreyvan.chronos.databinding.ActivityMainBinding;
-import com.upreyvan.chronos.fragments.games.GamesFragment;
+import com.upreyvan.chronos.fragments.game.GameFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         if (savedInstanceState == null) {
-            replaceFragment(new GamesFragment());
+            replaceFragment(new GameFragment());
         }
     }
 }

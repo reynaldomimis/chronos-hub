@@ -1,4 +1,4 @@
-package com.upreyvan.chronos.fragments.games;
+package com.upreyvan.chronos.fragments.game;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +24,7 @@ import com.upreyvan.chronos.util.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GamesFragment extends BaseFragment<FragmentGamesBinding> {
+public class GameFragment extends BaseFragment<FragmentGamesBinding> {
 
     private TaskAdapter taskAdapter;
     private TopGameAdapter topGameAdapter;
