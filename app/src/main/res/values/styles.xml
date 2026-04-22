@@ -26,4 +26,25 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="Widget.Chronos.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/bg_bottom_nav_chronos</item>
+        <item name="itemIconTint">@color/selector_bottom_nav_icon</item>
+        <item name="itemTextColor">@color/selector_bottom_nav_item</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.Chronos.BottomNavigation.ActiveIndicator</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+
+    <!-- Active indicator -->
+    <style name="Widget.Chronos.BottomNavigation.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/color_secondary</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Chronos.BottomNavigation.ActiveIndicator</item>
+    </style>
+
+    <!-- Rounded active indicator -->
+    <style name="ShapeAppearance.Chronos.BottomNavigation.ActiveIndicator" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
 </resources>

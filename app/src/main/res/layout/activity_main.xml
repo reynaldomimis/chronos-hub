@@ -13,15 +13,11 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <com.google.android.material.divider.MaterialDivider
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:alpha="0.5"
-        app:dividerColor="@color/color_accent"
-        app:dividerThickness="0.5dp" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bottom_nav_bg" />
+        android:background="@drawable/bottom_nav_bg"
+        app:labelVisibilityMode="labeled"
+        style="@style/Widget.Chronos.BottomNavigationView"
+        app:menu="@menu/main_bottom_menu" />
 </LinearLayout>
