@@ -11,8 +11,8 @@ import androidx.viewbinding.ViewBinding;
 
 public abstract class BaseAdapter<T, VB extends ViewBinding> extends ListAdapter<T, BaseAdapter.BaseViewHolder<VB>> {
 
-    private OnItemClickListener<T> listener;
-    protected OnItemClickListener<T> getOnItemClickListener() {
+    private ItemClickListener<T> listener;
+    protected ItemClickListener<T> getOnItemClickListener() {
         return listener;
     }
 
@@ -43,7 +43,7 @@ public abstract class BaseAdapter<T, VB extends ViewBinding> extends ListAdapter
         });
     }
 
-    public void setOnItemClickListener(OnItemClickListener<T> listener) {
+    public void setOnItemClickListener(ItemClickListener<T> listener) {
         this.listener = listener;
     }
 
@@ -55,7 +55,7 @@ public abstract class BaseAdapter<T, VB extends ViewBinding> extends ListAdapter
         }
     }
 
-    public interface OnItemClickListener<T> {
+    public interface ItemClickListener<T> {
         void onClick(T item, int position);
     }
 }
