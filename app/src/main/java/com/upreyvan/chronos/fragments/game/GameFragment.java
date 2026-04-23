@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.upreyvan.chronos.R;
+import com.upreyvan.chronos.activities.DailyActivity;
 import com.upreyvan.chronos.activities.LeaderboardActivity;
 import com.upreyvan.chronos.adapters.TopGameAdapter;
 import com.upreyvan.chronos.adapters.TaskAdapter;
@@ -72,11 +73,12 @@ public class GameFragment extends BaseFragment<FragmentGamesBinding> {
 
             switch (position) {
                 case 0:
+                    Intent intentDaily = new Intent(requireContext(), DailyActivity.class);
+                    startActivity(intentDaily);
                     break;
-
                 case 1:
-                    Intent intent = new Intent(requireContext(), LeaderboardActivity.class);
-                    startActivity(intent);
+                    Intent intentLeaderBoard = new Intent(requireContext(), LeaderboardActivity.class);
+                    startActivity(intentLeaderBoard);
                     break;
 
                 case 2:

@@ -3,7 +3,7 @@
     <string name="rewards">Rewards</string>
     <string name="play_games_nearn_rewards">Play Games.\nEarn Rewards</string>
     <string name="log_in">Log in</string>
-    <string name="default_username">Warlito</string>
+    <string name="default_username">User21</string>
     <string name="default_userid">ID: 193862518</string>
     <string name="default_points">0</string>
     <string name="title_redeem_btn">REDEEM</string>
@@ -37,4 +37,17 @@
     <string name="user1">User1</string>
     <string name="user2">User2</string>
     <string name="user3">User3</string>
+    <string name="bottom_home">Home</string>
+    <string name="bottom_wallet">Wallet</string>
+    <string name="bottom_profile">Profile</string>
+    <string name="bottom_settings">Settings</string>
+    <string name="daily_task">Daily Task</string>
+    <string name="earn_rewards">Earn Rewards</string>
+    <string name="claim_daily_reward">Watch Ad to earn 30 coins</string>
+    <string name="you_earned">You earned</string>
+    <string name="check_in">Check in</string>
+    <string name="you_ve_checkd_in_for">You’ve checked in for</string>
+    <string name="watch">Watch</string>
+    <string name="watch_ads">Watch Ads</string>
+    <string name="today">Today</string>
 </resources>

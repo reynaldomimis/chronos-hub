@@ -60,14 +60,13 @@ public class LeaderboardActivity extends BaseActivity {
         users.add(new LeaderBoardModel(1, 1, "Reynaldo", 3000, R.drawable.neon_sky));
         users.add(new LeaderBoardModel(2, 2, "Elmo", 2000, R.drawable.img));
         users.add(new LeaderBoardModel(3, 3, "Warlito", 1000, R.drawable.neon_sky));
-        users.add(new LeaderBoardModel(1, 1, "Reynaldo", 3000, R.drawable.neon_sky));
-        users.add(new LeaderBoardModel(2, 2, "Elmo", 2000, R.drawable.img));
-        users.add(new LeaderBoardModel(3, 3, "Warlito", 1000, R.drawable.neon_sky));
-
-        users.add(new LeaderBoardModel(1, 1, "Reynaldo", 3000, R.drawable.neon_sky));
-        users.add(new LeaderBoardModel(2, 2, "Elmo", 2000, R.drawable.img));
-        users.add(new LeaderBoardModel(3, 3, "Warlito", 1000, R.drawable.neon_sky));
-        users.add(new LeaderBoardModel(3, 3, "Warlito", 1000, R.drawable.neon_sky));
+        users.add(new LeaderBoardModel(4, 4, "Reynaldo", 3000, R.drawable.neon_sky));
+        users.add(new LeaderBoardModel(5, 5, "Elmo1", 2000, R.drawable.img));
+        users.add(new LeaderBoardModel(6, 6, "Warlito1", 1000, R.drawable.neon_sky));
+        users.add(new LeaderBoardModel(7, 7, "Reynaldo1", 3000, R.drawable.neon_sky));
+        users.add(new LeaderBoardModel(8, 8, "Elmo2", 2000, R.drawable.img));
+        users.add(new LeaderBoardModel(9, 9, "Warlito2", 1000, R.drawable.neon_sky));
+        users.add(new LeaderBoardModel(10, 10, "Warlito2", 1000, R.drawable.neon_sky));
 
         //Max 10 data
         List<LeaderBoardModel> limitedList = users.size() > 10

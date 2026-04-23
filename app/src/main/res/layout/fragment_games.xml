@@ -113,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            app:cardBackgroundColor="?colorOnSecondary"
+                            app:cardBackgroundColor="@color/color_top"
                             app:cardCornerRadius="12dp"
                             app:cardElevation="1dp"
                             app:strokeWidth="0dp">
@@ -137,16 +137,20 @@
                                     android:layout_marginStart="8dp"
                                     android:alpha="0.4"
                                     android:src="@drawable/ic_copy"
-                                    app:tint="?colorTertiary" />
+                                    app:tint="@color/text_hint" />
                             </LinearLayout>
                         </com.google.android.material.card.MaterialCardView>
 
                         <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.MaterialComponents.Button"
                             android:id="@+id/btn_invite"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:layout_marginEnd="60dp"
+                            android:layout_marginBottom="4dp"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:backgroundTint="?colorSecondary"
                             android:text="@string/invite_friends_and_earn"
                             android:textAllCaps="false"
@@ -240,6 +244,7 @@
                     app:layout_constraintTop_toTopOf="@id/tvTopSurvey" />
 
                 <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
                     android:id="@+id/btnStartNow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -249,6 +254,8 @@
                     android:minHeight="0dp"
                     android:paddingVertical="10dp"
                     android:text="@string/start_now"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="18sp"

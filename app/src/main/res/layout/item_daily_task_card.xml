@@ -79,6 +79,7 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
             android:id="@+id/btnProceed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,6 +91,8 @@
             android:paddingVertical="10dp"
             android:text="@string/proceed"
             android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true"
             app:backgroundTint="?colorSecondary"
             app:cornerRadius="18dp"
             app:elevation="0dp"

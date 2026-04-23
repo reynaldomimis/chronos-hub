@@ -70,6 +70,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 app:cardBackgroundColor="@color/color_top"
+                android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
                 app:strokeWidth="0dp">
